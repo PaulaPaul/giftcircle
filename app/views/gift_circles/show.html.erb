@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gift_circle.name %>
+</p>
+
+<p>
+  <strong>Occasion:</strong>
+  <%= @gift_circle.occasion %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @gift_circle.about %>
+</p>
+
+<p>
+  <strong>Theme:</strong>
+  <%= @gift_circle.theme %>
+</p>
+
+<p>
+  <strong>Giving date:</strong>
+  <%= @gift_circle.giving_date %>
+</p>
+
+<p>
+  <strong>Reveal date:</strong>
+  <%= @gift_circle.reveal_date %>
+</p>
+
+<p>
+  <strong>Min giftprice:</strong>
+  <%= @gift_circle.min_giftprice %>
+</p>
+
+<p>
+  <strong>Max giftprice:</strong>
+  <%= @gift_circle.max_giftprice %>
+</p>
+
+<p>
+  <strong>Annon admin?:</strong>
+  <%= @gift_circle.annon_admin? %>
+</p>
+
+<p>
+  <strong>Active?:</strong>
+  <%= @gift_circle.active? %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @gift_circle.person_id %>
+</p>
+
+<%= link_to 'Edit', edit_gift_circle_path(@gift_circle) %> |
+<%= link_to 'Back', gift_circles_path %>

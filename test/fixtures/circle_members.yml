@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  giver_id: 1
+  giverNickname: MyString
+  person_id: 1
+  personInterests: MyText
+  giverNotes: MyText
+  giftGiven?: false
+  thankYou: MyText
+  giftCircle_id: 1
+  gift_id: 1
+
+two:
+  giver_id: 1
+  giverNickname: MyString
+  person_id: 1
+  personInterests: MyText
+  giverNotes: MyText
+  giftGiven?: false
+  thankYou: MyText
+  giftCircle_id: 1
+  gift_id: 1

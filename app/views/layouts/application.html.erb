@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giftcircle</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h3><%= link_to 'Groups', groups_path %> | <%= link_to 'People', people_path %> | <%= link_to 'GiftCircles', gift_circles_path %> | <%= link_to 'CircleMembers', circle_members_path %> | <%= link_to 'Gifts', gifts_path %></h3>
+
+<%= yield %>
+
+</body>
+</html>

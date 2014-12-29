@@ -1,0 +1,53 @@
+<%= form_for(@circle_member) do |f| %>
+  <% if @circle_member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@circle_member.errors.count, "error") %> prohibited this circle_member from being saved:</h2>
+
+      <ul>
+      <% @circle_member.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :receiver_id %><br>
+    <%= f.number_field :receiver_id %>
+  </div>
+  <div class="field">
+    <%= f.label :giverNickname %><br>
+    <%= f.text_field :giverNickname %>
+  </div>
+  <div class="field">
+    <%= f.label :person_id %><br>
+    <%= f.number_field :person_id %>
+  </div>
+  <div class="field">
+    <%= f.label :personInterests %><br>
+    <%= f.text_area :personInterests %>
+  </div>
+  <div class="field">
+    <%= f.label :giverNotes %><br>
+    <%= f.text_area :giverNotes %>
+  </div>
+  <div class="field">
+    <%= f.label :giftGiven? %><br>
+    <%= f.check_box :giftGiven? %>
+  </div>
+  <div class="field">
+    <%= f.label :thankYou %><br>
+    <%= f.text_area :thankYou %>
+  </div>
+  <div class="field">
+    <%= f.label :giftCircle_id %><br>
+    <%= f.number_field :giftCircle_id %>
+  </div>
+  <div class="field">
+    <%= f.label :gift_id %><br>
+    <%= f.number_field :gift_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

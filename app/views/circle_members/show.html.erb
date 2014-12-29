@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Recipient:</strong>
+  <%= @circle_member.receiver_id %>
+</p>
+
+<p>
+  <strong>Givernickname:</strong>
+  <%= @circle_member.giverNickname %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @circle_member.person_id %>
+</p>
+
+<p>
+  <strong>Personinterests:</strong>
+  <%= @circle_member.personInterests %>
+</p>
+
+<p>
+  <strong>Givernotes:</strong>
+  <%= @circle_member.giverNotes %>
+</p>
+
+<p>
+  <strong>Giftgiven?:</strong>
+  <%= @circle_member.giftGiven? %>
+</p>
+
+<p>
+  <strong>Thankyou:</strong>
+  <%= @circle_member.thankYou %>
+</p>
+
+<p>
+  <strong>Giftcircle:</strong>
+  <%= @circle_member.giftCircle_id %>
+</p>
+
+<p>
+  <strong>Gift:</strong>
+  <%= @circle_member.gift_id %>
+</p>
+
+<%= link_to 'Edit', edit_circle_member_path(@circle_member) %> |
+<%= link_to 'Back', circle_members_path %>

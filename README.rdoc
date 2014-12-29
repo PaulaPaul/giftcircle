@@ -1,0 +1,28 @@
+##
+# giftcircle
+#	- Originally intended to make it easy for people to give personal non-commercial gifts, in a
+#	  'secret santa' type of arrangment.  A group of people join a gift circle, and are matched up
+#	  in pairs as gift givers and gift receivers, with the following rules:
+#	  	- gift circles have the have at least three participants (people)
+#	  	- a gift giver and gift receiver can't have a circular relationship
+#	  	- a gift giver can't be paired with him/herself as the gift receiver  
+#	- Enabled for file and photo upload, so that the gifts can be photos, poems, quotes, words of encouragement... 
+#	  so that people who have family members who are far away can exchange photos or other personal gifts.
+#	- The model and code is generic so anyone who wants to use this for commercial purposes is more than welcome-
+#	- SantaCircles is one example of 'skinning' the giftcircle code to encourage people to give non-commercial Christmas gifts
+#
+# Ruby version
+#
+# System dependencies
+#
+# Configuration
+#
+# Database creation
+#
+# Database initialization
+#
+# How to run the test suite
+#
+#
+#
+# Deployment instructions

@@ -1,0 +1,61 @@
+<%= form_for(@gift_circle) do |f| %>
+  <% if @gift_circle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gift_circle.errors.count, "error") %> prohibited this gift_circle from being saved:</h2>
+
+      <ul>
+      <% @gift_circle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :occasion %><br>
+    <%= f.text_field :occasion %>
+  </div>
+  <div class="field">
+    <%= f.label :about %><br>
+    <%= f.text_area :about %>
+  </div>
+  <div class="field">
+    <%= f.label :theme %><br>
+    <%= f.text_field :theme %>
+  </div>
+  <div class="field">
+    <%= f.label :giving_date %><br>
+    <%= f.date_select :giving_date %>
+  </div>
+  <div class="field">
+    <%= f.label :reveal_date %><br>
+    <%= f.date_select :reveal_date %>
+  </div>
+  <div class="field">
+    <%= f.label :min_giftprice %><br>
+    <%= f.text_field :min_giftprice %>
+  </div>
+  <div class="field">
+    <%= f.label :max_giftprice %><br>
+    <%= f.text_field :max_giftprice %>
+  </div>
+  <div class="field">
+    <%= f.label :annon_admin? %><br>
+    <%= f.check_box :annon_admin? %>
+  </div>
+  <div class="field">
+    <%= f.label :active? %><br>
+    <%= f.check_box :active? %>
+  </div>
+  <div class="field">
+    <%= f.label :person_id %><br>
+    <%= f.number_field :person_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

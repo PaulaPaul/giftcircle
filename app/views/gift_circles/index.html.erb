@@ -1,0 +1,45 @@
+<h1>Listing gift_circles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Occasion</th>
+      <th>About</th>
+      <th>Theme</th>
+      <th>Giving date</th>
+      <th>Reveal date</th>
+      <th>Min giftprice</th>
+      <th>Max giftprice</th>
+      <th>Annon admin?</th>
+      <th>Active?</th>
+      <th>Person</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gift_circles.each do |gift_circle| %>
+      <tr>
+        <td><%= gift_circle.name %></td>
+        <td><%= gift_circle.occasion %></td>
+        <td><%= gift_circle.about %></td>
+        <td><%= gift_circle.theme %></td>
+        <td><%= gift_circle.giving_date %></td>
+        <td><%= gift_circle.reveal_date %></td>
+        <td><%= gift_circle.min_giftprice %></td>
+        <td><%= gift_circle.max_giftprice %></td>
+        <td><%= gift_circle.annon_admin? %></td>
+        <td><%= gift_circle.active? %></td>
+        <td><%= gift_circle.person_id %></td>
+        <td><%= link_to 'Show', gift_circle %></td>
+        <td><%= link_to 'Edit', edit_gift_circle_path(gift_circle) %></td>
+        <td><%= link_to 'Destroy', gift_circle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gift circle', new_gift_circle_path %>

@@ -1,0 +1,2 @@
+module GiftCirclesHelper
+end
