@@ -8,6 +8,21 @@
 </head>
 <body>
 <h3><%= link_to 'Groups', groups_path %> | <%= link_to 'People', people_path %> | <%= link_to 'GiftCircles', gift_circles_path %> | <%= link_to 'CircleMembers', circle_members_path %> | <%= link_to 'Gifts', gifts_path %></h3>
+     <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
+
+<strong>
+	<p class="sign_up">
+		<% if person_signed_in? %>
+			Logged in as <strong> <%= current_person.email %> </strong>
+			<%= link_to "Edit Profile", edit_person_registration_path, :class => "navbar-link" %>
+			<%= link_to "Logout", destroy_person_session_path, method: :delete, :class => "navbar-link" %>
+		<% else %>
+			<%= link_to "Signup", new_person_registration_path, :class => "navbar-link" %>
+			<%= link_to "Login", new_person_session_path, :class => "navbar-link" %>
+		<% end %>
+	</p>
+</strong>
 
 <%= yield %>
 
